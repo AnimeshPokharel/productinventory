@@ -1,0 +1,22 @@
+<form class="product-form" #myForm="ngForm" (submit)="saveProduct(myForm.value)">
+   <div class="product-controller">
+            <label for="pname"></label>
+   Product Name<input type="text" name="pname" ngModel>
+   </div>
+
+   <div class="product-controller">
+            <label for="price"></label>
+   Price<input type="number" name="price" ngModel>
+   </div>
+
+   <div class="product-controller">
+            <label for="quantity"></label>
+   Quantity<input type="number" name="quantity" ngModel>
+   </div>
+
+   <div class="product-controller">
+    <input type="submit">
+    </div>
+
+</form>
+

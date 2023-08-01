@@ -1,0 +1,14 @@
+.product-form{
+    max-width: 90%;
+    margin: 1rem 0 0 35rem;
+}
+.product-controller{
+    margin: 5 rem 0;
+}
+
+.product-controller input{
+    display: block;
+    border: solid 1px rgb(218, 167, 40);
+    border-radius: 2px;
+    width: 250px;
+}

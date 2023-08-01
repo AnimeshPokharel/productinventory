@@ -1,0 +1,12 @@
+table,th,tr,td{
+    border: solid 1px;
+}
+
+.product-header{
+    color: teal(218, 167, 40);
+    margin: auto;
+    text-align: center;
+    max-width: 90%;
+
+}
+

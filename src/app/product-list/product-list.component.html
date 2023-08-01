@@ -1,0 +1,18 @@
+<table class= "product-header">
+    <tr>
+        <th>PID</th>
+        <th>PNAME</th>
+        <th>PRICE</th>
+        <th>QUANTITY</th>
+        <th>ACTION</th>
+    </tr>
+    <tr *ngFor="let prod of productsList">
+        <td>{{prod.pid}}</td>
+        <td>{{prod.pname}}</td>
+        <td>{{prod.price}}</td>
+        <td>{{prod.quantity}}</td>
+        <td><button (click)="deleteProduct(prod.pid)">Delete</button></td>
+    </tr>
+     
+</table>
+
