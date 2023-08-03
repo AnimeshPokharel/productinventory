@@ -7,20 +7,21 @@ import { Product } from './product';
 })
 export class ProductService {
 
-  constructor(private http:HttpClient) { 
+   ROOT_URL:String="https://springproduct-env.eba-amxg7uib.us-east-2.elasticbeanstalk.com";
 
+  constructor(private http:HttpClient) { 
   }
 
  public getAllProducts(){
-   return this.http.get('http://localhost:8080/products');
+   return this.http.get(this.ROOT_URL+"/products");
  }
 
  public saveProduct(prod: Product){
-   return this.http.post("http://localhost:8080/save",prod);
+   return this.http.post(this.ROOT_URL+"/save",prod);
  }
 
  public deleteProduct(pid:number){
-  return this.http.delete("http://localhost:8080/delete/"+pid);
+  return this.http.delete(this.ROOT_URL+"/delete/"+pid);
  
 }
 }
